@@ -1,7 +1,7 @@
 
 ######################################################
 ###Title: "APP for FLT3 QA Project"
-###Authors: RRC, ARC, etc...
+###Author: RRC
 ###Date: Version 1.0 "July 25, 2016"
 ###Output: Shiny App
 ######################################################
@@ -59,10 +59,10 @@ options(shiny.maxRequestsize = 9*1024^2)
 server = shinyServer(
   function(input, output){
     
-#Code to replace MDACC logo with Dataframe    
+#Code to replace logo with Dataframe    
     output$tb = renderUI({
       if(is.null(submitteddata()))
-        h5("Powered by", tags$img(src="MDACC.png", heigth = 200, width = 500))
+        h5("Powered by", tags$img(src="XXXX.png", heigth = 200, width = 500))
       else
         tabsetPanel(tabPanel("Data", tableOutput("table")))
     })
